@@ -1,4 +1,9 @@
 # Collision-Welding-Calculator
+(C) Blake Barnett 2023
+
+This collision welding parameter calculation tool is licensed under CC BY-NC-SA 4.0
+[https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode]
+
 Prediction of collision welding process limits in the weld velocity-impact angle plane using analytical methods for similar and dissimilar welds.
 
 
