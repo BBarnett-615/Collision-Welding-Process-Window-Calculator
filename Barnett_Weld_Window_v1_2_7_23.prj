@@ -1,0 +1,72 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2929948877" file="C:\Users\nocam\Documents\MATLAB\Barnett_Weld_Window_v1_2_7_23.prj" location="C:\Users\nocam\Documents\MATLAB" name="Barnett_Weld_Window_v1_2_7_23" target="target.mlapps" target-name="Package App">
+    <param.appname>Barnett_Weld_Window_v1_2_7_23</param.appname>
+    <param.authnamewatermark>Blake Barnett</param.authnamewatermark>
+    <param.email>barnett.615@buckeyemail.osu.edu</param.email>
+    <param.company>The Ohio State University</param.company>
+    <param.icon />
+    <param.icons />
+    <param.summary>Collision welding window calculator for acoustic, shock, and elastic stress propagation models.</param.summary>
+    <param.description>(C) Blake Barnett 2023
+
+This collision welding parameter calculation tool is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+
+CC BY-NC-SA 4.0
+
+[https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode]
+
+Collision welding window calculator for acoustic, shock, and elastic stress propagation models. Stress models are combined with original and modified (harmonic mean of flyer and target thermal properties) thermal models from Wittman (acoustic), Efremov/Zakharenko (elastic), and Barnett (shock).</param.description>
+    <param.screenshot>C:\Users\nocam\AppData\Local\Temp\tp055f3390_bba7_4b57_804c_4be98bb58945.png</param.screenshot>
+    <param.version>1.0</param.version>
+    <param.products.name>
+      <item>MATLAB</item>
+    </param.products.name>
+    <param.products.id>
+      <item>1</item>
+    </param.products.id>
+    <param.products.version>
+      <item>9.9</item>
+    </param.products.version>
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>6f353742-0f34-4776-98b3-520f16b74229</param.guid>
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\Barnett_Weld_Window_v1_2_7_23.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\AppData.xlsx</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\nocam\Documents" name="MATLAB" optional="false">C:\Users\nocam\Documents\MATLAB</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020b</root>
+      <toolboxes />
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
