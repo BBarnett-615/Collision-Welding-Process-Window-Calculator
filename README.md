@@ -1,4 +1,4 @@
-# Collision-Welding-Calculator
+# Collision-Welding-Process-Limit-Calculator
 (C) Blake Barnett 2023
 
 This collision welding parameter calculation tool is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
