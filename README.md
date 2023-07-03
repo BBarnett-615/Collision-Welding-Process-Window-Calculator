@@ -1,21 +1,32 @@
 # Collision-Welding-Calculator
 (C) Blake Barnett 2023
 
-This collision welding parameter calculation tool is licensed under CC BY-NC-SA 4.0
+This collision welding parameter calculation tool is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License
+CC BY-NC-SA 4.0
 [https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode]
 
-Prediction of collision welding process limits in the weld velocity-impact angle plane using analytical methods for similar and dissimilar welds.
-
+This tool calculates  collision welding process limits in the weld velocity-impact angle plane using analytical methods for similar and dissimilar welds.
 
 Collision welding minimum velocities are calculated using the greater value of (Ultimate Tensile Strength/Density) between the two weld materials.
-Jetting limits are calculated using the procedures described by Walsh (1) and implemented numerically similarly to the methods described by de Rossett (2).
-Flat interface - wavy interface transition velocities are not calculated.
-Upper welding limits can be calculated using a variety of approaches for modeling both stress propagation and interfacial heating/cooling:
-  The Acoustic stress model assumes that propagating stresses have a constant velocity equal to the bulk sound velocity based on work by Wittman (3),
-  The elastic model assumes stress propagation dependent on the materials' shear modulus based on work by Efremov et al (4),
-  The shock model is adapted from 1-D Rankine-Hugoniot approximations developed by the shock physics community and based largely on the text by Meyers (5), and assumes that stresses propagate at a constant velocity equal to the shock velocities in the flyer and target (Us1 & Us2) due to impact.
 
-  Thermal models include a moving heat source model based on Wittman (3) and Carslaw & Jaeger (6), in the original form and modified to take the harmonic mean of the flyer and target thermal properties. Elastic upper limits use  an instantaneous heat source model based on Zakharenko (7) and modified to include dissimilar materials based on work by Karkhin (8). Shock models use either a modified moving heat source model, or a distributed point heat source model where each of n points instantaneously deposits (1/n) of the total impact heat instantaneously. The number of sources n is dictated by the total length of the weld L and the inter-point spacing dx, which roughly corresponds to the wavelength of the wavy weld interface.
+Jetting limits are calculated using the procedures described by Walsh (1) and implemented numerically similarly to the methods described by de Rossett (2).
+
+Flat interface - wavy interface transition velocities are not calculated.
+
+Upper welding limits can be calculated using a variety of approaches for modeling both stress propagation and interfacial heating/cooling:
+  * The Acoustic stress model assumes that propagating stresses have a constant velocity equal to the bulk sound velocity based on work by Wittman (3),
+  * The elastic model assumes stress propagation dependent on the materials' shear modulus based on work by Efremov et al (4),
+  * The shock model is adapted from 1-D Rankine-Hugoniot approximations developed by the shock physics community and based largely on the text by Meyers (5), and assumes that stresses propagate at a constant velocity equal to the shock velocities in the flyer and target (Us1 & Us2) due to impact.
+
+Thermal models include a moving heat source model based on Wittman (3) and Carslaw & Jaeger (6), in the original form and modified to take the harmonic mean of the flyer and target thermal properties. Elastic upper limits use  an instantaneous heat source model based on Zakharenko (7) and modified to include dissimilar materials based on work by Karkhin (8). Shock models use either a modified moving heat source model, or a distributed point heat source model where each of n points instantaneously deposits (1/n) of the total impact heat instantaneously. The number of sources n is dictated by the total length of the weld L and the inter-point spacing dx, which roughly corresponds to the wavelength of the wavy weld interface and can be set by the user.
+
+Upper Limit models are designated as follows within the app:
+  A-1: Original Acoustic Upper Limit
+  A-2: Acoustic Upper Limit with Harmonic Mean Thermal Properties
+  S-1: Shock Upper Limit with Moving Hot Zone (derived from acoustic upper limit themral model with harmonic mean thermal properties)
+  S-2: Shock Upper Limit with Instantaneous Distributed Point Sources
+  E-1: Original Elastic Upper Limit
+  E-2: Elastic Upper Limit with a 1-D composite rod thermal model
   
   Shock response data is from Marsh (9), other quasistatic material properties are from associated ASM handbooks (10,11).
   
